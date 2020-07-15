@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Day 1 Assignment 2</title>
+</head>
+
+<body>
+    <p>var: The scope of a variable defined with the keyword “var” is limited to the “function” within which it is defined. If it is defined outside any function, the scope of the variable is global. var is “function scoped”.</p>
+    <p>let: The scope of a variable defined with the keyword “let” or “const” is limited to the “block” defined by curly braces i.e. {} . “let” and “const” are“block scoped”.</p>
+    <p>const: The scope of a variable defined with the keyword “const” is limited to the block defined by curly braces. However if a variable is defined with keyword const, it cannot be reassigned. “const” cannot be re-assigned to a new value. However it
+        CAN be mutated.</p>
+    <script>
+        // calling x after definition 
+        var x = 5;
+        document.write(x, "\n");
+
+        // calling y after definition  
+        let y = 10;
+        document.write(y, "\n");
+
+        // calling var z before definition will return undefined 
+        document.write(z, "\n");
+        var z = 2;
+
+        // calling let a before definition will give error 
+        document.write(a);
+        let a = 3;
+    </script>
+
+</body>
+
+</html>
