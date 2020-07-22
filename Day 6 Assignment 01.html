@@ -1,0 +1,17 @@
+PART-A(html file
+<html>
+<div class="bg"></div>
+
+</html>
+PART-B(CSS file).bg { width: 100%; height: 100%; } PART-C(HTML FILE)
+<script>
+    var bg = document.getElementByClassName('bg');
+    var colours = ["#CCCDFF", "#BAC7E8", "#D9EEFF", "#BADFE8"];
+    for (i = 0; i < colours.length; i++) {
+        setInterval(change, 200);
+
+        function change() {
+            bg.style.background = colours;
+        }
+    }
+</script>
